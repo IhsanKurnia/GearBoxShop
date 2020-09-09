@@ -1,0 +1,260 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/dt_car"
+    android:orientation="vertical"
+    tools:context=".DetailMobilActivity">
+
+    <!--Navigasi-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="59dp"
+        android:background="@drawable/dt_car"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/back_detail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="4dp"
+            android:padding="8dp"
+            android:src="@drawable/ic_baseline_arrow_back_24" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:fontFamily="@font/roboto_bold"
+            android:text="Review Mobil"
+            android:textColor="#fff"
+            android:textSize="25sp" />
+    </LinearLayout>
+    <!--Navigasi-->
+
+    <!--Content Image-->
+    <ImageView
+        android:id="@+id/iv_gambar_mobil"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:adjustViewBounds="true"
+        android:scaleType="fitXY"
+        android:src="@drawable/car_01" />
+    <!--Content Image-->
+
+    <!--ScrollView Content-->
+    <ScrollView
+        android:id="@+id/scroll_detail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <!--Content Titile-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="@dimen/cardview_default_radius"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_nama_mobil"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/dt_car"
+                android:fontFamily="@font/roboto_bold"
+                android:padding="16dp"
+                android:text="Nama Mobil"
+                android:textColor="#fff"
+                android:textSize="25sp" />
+            <!--content Title-->
+
+            <!--Content Detail-->
+            <TextView
+                android:id="@+id/tv_detail"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/detail"
+                android:justificationMode="inter_word"
+                android:fontFamily="@font/roboto_regular"
+                android:lineSpacingMultiplier="1.5"
+                android:layout_marginStart="8dp"
+                android:layout_marginEnd="8dp"
+                android:padding="16dp"
+                android:paddingBottom="8dp"
+                android:text="@string/detail_01"
+                android:textColor="#000" />
+            <!--Content Detail-->
+
+            <!--Content Title Spek-->
+            <TextView
+                android:id="@+id/tv_spesifikasi"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/dt_car"
+                android:drawablePadding="8dp"
+                android:fontFamily="@font/roboto_bold"
+                android:padding="15dp"
+                android:text="Spesifikasi Mobil"
+                android:textColor="#fff"
+                android:textSize="25sp" />
+            <!--Content title Spek-->
+
+            <!--Scroll Horizontal-->
+            <HorizontalScrollView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:background="@drawable/dt_car"
+                android:scrollbars="vertical">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/tv_content"
+                        android:layout_width="144dp"
+                        android:layout_height="150dp"
+                        android:layout_marginStart="8dp"
+                        android:layout_marginEnd="8dp"
+                        android:background="@drawable/car_01"
+                        android:fontFamily="@font/roboto_regular"
+                        android:lineSpacingMultiplier="1"
+                        android:padding="16dp"
+                        android:paddingBottom="8dp"
+                        android:text="Latihan "
+                        android:textColor="#000"
+                        app:cardBackgroundColor="#EBEFF0"
+                        app:cardCornerRadius="8dp" />
+
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/tv_content2"
+                        android:layout_width="150dp"
+                        android:layout_height="150dp"
+                        android:layout_marginStart="8dp"
+                        android:layout_marginEnd="8dp"
+                        android:fontFamily="@font/roboto_regular"
+                        android:lineSpacingMultiplier="1"
+                        android:padding="16dp"
+                        android:paddingBottom="8dp"
+                        android:text="Latihan "
+                        android:textColor="#000"
+                        app:cardBackgroundColor="#EBEFF0"
+                        app:cardCornerRadius="8dp" />
+
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/tv_content3"
+                        android:layout_width="150dp"
+                        android:layout_height="150dp"
+                        android:layout_marginStart="8dp"
+                        android:layout_marginEnd="8dp"
+                        android:fontFamily="@font/roboto_regular"
+                        android:lineSpacingMultiplier="1"
+                        android:padding="16dp"
+                        android:paddingBottom="8dp"
+                        android:text="Latihan "
+                        android:textColor="#000"
+                        app:cardBackgroundColor="#EBEFF0"
+                        app:cardCornerRadius="8dp" />
+
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/tv_content4"
+                        android:layout_width="150dp"
+                        android:layout_height="150dp"
+                        android:layout_marginStart="8dp"
+                        android:layout_marginEnd="8dp"
+                        android:fontFamily="@font/roboto_regular"
+                        android:lineSpacingMultiplier="1"
+                        android:padding="16dp"
+                        android:paddingBottom="8dp"
+                        android:text="Latihan "
+                        android:textColor="#000"
+                        app:cardBackgroundColor="#EBEFF0"
+                        app:cardCornerRadius="8dp" />
+
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/tv_content5"
+                        android:layout_width="150dp"
+                        android:layout_height="150dp"
+                        android:layout_marginStart="8dp"
+                        android:layout_marginEnd="8dp"
+                        android:fontFamily="@font/roboto_regular"
+                        app:cardBackgroundColor="#EBEFF0"
+                        android:lineSpacingMultiplier="1"
+                        android:padding="16dp"
+                        android:paddingBottom="8dp"
+                        android:text="Latihan "
+                        android:textColor="#000"
+                        app:cardCornerRadius="8dp" />
+                </LinearLayout>
+            </HorizontalScrollView>
+
+            <!--Content penutup-->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:fontFamily="@font/roboto_bold"
+                android:padding="10dp"
+                android:text="About me"
+                android:textColor="#fff"
+                android:textSize="25sp" />
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginStart="8dp"
+                android:layout_marginEnd="8dp"
+                android:padding="10dp"
+                android:layout_marginBottom="20dp"
+                app:cardBackgroundColor="#EBEFF0"
+                app:cardCornerRadius="8dp">
+
+                <ImageView
+                    android:id="@+id/user"
+                    android:layout_width="100dp"
+                    android:layout_height="105dp"
+                    android:layout_gravity="center_horizontal"
+                    android:adjustViewBounds="true"
+                    android:padding="8dp"
+                    android:src="@drawable/user_pic" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="90dp"
+                    android:fontFamily="@font/roboto_bold"
+                    android:padding="10dp"
+                    android:text="Ihsan Kurnia"
+                    android:textColor="#000" />
+
+                <com.codesgood.views.JustifiedTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/roboto_thin"
+                    android:layout_marginTop="120dp"
+                    android:textColor="#000"
+                    android:layout_gravity="center_horizontal"
+                    android:text="@string/quotes"/>
+
+                <Button
+                    android:id="@+id/btn_ab"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:padding="8dp"
+                    android:background="@drawable/btn_primary_circle"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="145dp"/>
+            </androidx.cardview.widget.CardView>
+            <!--End Content Penutup-->
+        </LinearLayout>
+
+        <!-- End Scroll Horizontal-->
+
+    </ScrollView>
+    <!--    Scroll Content-->
+</LinearLayout>
