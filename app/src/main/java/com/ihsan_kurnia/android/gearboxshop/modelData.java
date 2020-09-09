@@ -227,6 +227,7 @@ public class modelData {
     };
     /*End Data Detail*/
 
+    /*Fungsi Set*/
     static ArrayList<Mobil> getListData() {
         ArrayList<Mobil> list = new ArrayList<>();
         for (int position = 0; position < namesCars.length; position++) {
