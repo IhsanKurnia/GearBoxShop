@@ -10,8 +10,8 @@ public class modelData {
             "Jaguar F Type 2013",
             "Volkswegen Typ R",
             "BMW 6 Series",
-            "Mitsubishi OutLander",
-            "Mercy CLA Gen-2",
+            "Mitsubishi OutLander PHEV",
+            "Mercedes Benz Cla Gen-2",
             "Mazda CX-9 Gen-2",
             "Supra Generasi 5",
             "Lamborgini Huracan"
