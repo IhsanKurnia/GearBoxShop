@@ -208,7 +208,7 @@
                                 android:layout_marginBottom="8dp"
                                 android:fontFamily="@font/roboto_bold"
                                 android:gravity="center"
-                                android:text="Tahun Release"
+                                android:text="Pabrikan"
                                 android:textColor="#fff"
                                 android:textSize="14dp" />
                         </LinearLayout>
@@ -257,7 +257,7 @@
                                 android:layout_marginBottom="8dp"
                                 android:fontFamily="@font/roboto_bold"
                                 android:gravity="center"
-                                android:text="Tahun Release"
+                                android:text="Manufacture"
                                 android:textColor="#fff"
                                 android:textSize="14dp" />
                         </LinearLayout>
@@ -306,7 +306,7 @@
                                 android:layout_marginBottom="8dp"
                                 android:fontFamily="@font/roboto_bold"
                                 android:gravity="center"
-                                android:text="Tahun Release"
+                                android:text="Harga"
                                 android:textColor="#fff"
                                 android:textSize="14dp" />
                         </LinearLayout>
@@ -356,7 +356,7 @@
                                 android:layout_marginBottom="8dp"
                                 android:fontFamily="@font/roboto_bold"
                                 android:gravity="center"
-                                android:text="Tahun Release"
+                                android:text="Type Mobil"
                                 android:textColor="#fff"
                                 android:textSize="14dp" />
                         </LinearLayout>
