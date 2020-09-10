@@ -11,7 +11,6 @@ import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.bumptech.glide.Glide;
-import com.bumptech.glide.request.RequestOptions;
 
 import java.util.ArrayList;
 
@@ -46,9 +45,11 @@ public class MobilListAdapter extends RecyclerView.Adapter<MobilListAdapter.List
             public void onClick(View view) {
                 gotoDetailActivity(view, mobil.getNameCars(), mobil.getPhotoCars(), mobil.getTextDetail());
 
+
             }
         });
     }
+
 
     private void gotoDetailActivity(View view, String nameCars, int photoCars, String textDetail) {
         Intent intent = new Intent(view.getContext(), DetailMobilActivity.class);
@@ -75,5 +76,7 @@ public class MobilListAdapter extends RecyclerView.Adapter<MobilListAdapter.List
             tvYears = itemView.findViewById(R.id.tv_years);
             tvManufacture = itemView.findViewById(R.id.tv_manufacture);
         }
+
+
     }
 }

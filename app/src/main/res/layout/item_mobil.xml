@@ -20,34 +20,36 @@
 
         <ImageView
             android:id="@+id/img_item_mobil"
-            android:layout_width="150dp"
-            android:layout_height="150dp"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
             android:layout_gravity="center_vertical"
             android:layout_marginStart="8dp"
             android:layout_marginTop="16dp"
             android:layout_marginEnd="16dp"
             android:layout_marginBottom="16dp"
+            android:background="@drawable/circle"
             android:adjustViewBounds="true"
-            tools:src="@drawable/car_01" />
+            android:scaleType="fitCenter"
+            tools:src="@drawable/ls_01" />
 
         <TextView
             android:id="@+id/tv_name_cars"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:layout_marginStart="3dp"
+            android:layout_marginStart="2dp"
             android:layout_marginTop="16dp"
             android:layout_toEndOf="@+id/img_item_mobil"
             android:fontFamily="@font/roboto_bold"
             android:text="Nama Kendaraan"
             android:textColor="#fff"
-            android:textSize="16sp" />
+            android:textSize="18sp" />
 
         <TextView
             android:id="@+id/tv_years"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_alignTop="@+id/tv_name_cars"
-            android:layout_marginStart="3dp"
+            android:layout_marginStart="2dp"
             android:layout_marginTop="8dp"
             android:layout_marginEnd="8dp"
             android:layout_toEndOf="@+id/img_item_mobil"
@@ -56,14 +58,14 @@
             android:paddingTop="18dp"
             android:text="Tahun"
             android:textColor="#fff"
-            android:textSize="16sp" />
+            android:textSize="18sp" />
 
         <TextView
             android:id="@+id/tv_manufacture"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_alignTop="@+id/tv_name_cars"
-            android:layout_marginStart="3dp"
+            android:layout_marginStart="2dp"
             android:layout_marginTop="35dp"
             android:layout_marginEnd="8dp"
             android:layout_toEndOf="@+id/img_item_mobil"
@@ -72,7 +74,7 @@
             android:paddingTop="16dp"
             android:text="Pabrikan"
             android:textColor="#fff"
-            android:textSize="14dp" />
+            android:textSize="18dp" />
 
     </RelativeLayout>
 

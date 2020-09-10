@@ -32,33 +32,19 @@ public class modelData {
 
     /*Data Gambar Kendaraan*/
     private static int[] photo = {
-            R.drawable.car_01,
-            R.drawable.car_02,
-            R.drawable.car_03,
-            R.drawable.car_04,
-            R.drawable.car_05,
-            R.drawable.car_06,
-            R.drawable.car_07,
-            R.drawable.car_08,
-            R.drawable.car_09,
-            R.drawable.car_10,
+            R.drawable.ls_01,
+            R.drawable.ls_02,
+            R.drawable.ls_03,
+            R.drawable.ls_04,
+            R.drawable.ls_05,
+            R.drawable.ls_06,
+            R.drawable.ls_07,
+            R.drawable.ls_08,
+            R.drawable.ls_09,
+            R.drawable.ls_10,
     };
     /*End Data Gambar Kendaraan*/
 
-    /*Data Gambar listView*/
-    private static int [] photoLs ={
-      R.drawable.ls_01,
-      R.drawable.ls_02,
-      R.drawable.ls_03,
-      R.drawable.ls_04,
-      R.drawable.ls_05,
-      R.drawable.ls_06,
-      R.drawable.ls_07,
-      R.drawable.ls_08,
-      R.drawable.ls_09,
-      R.drawable.ls_10,
-    };
-    /*End Data Gambar listView*/
 
     /*Data Detail*/
     private static String[] textView = new String[]{
