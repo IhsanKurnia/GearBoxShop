@@ -5,6 +5,7 @@ public class Mobil {
     private String years;
     private String manufacture;
     private int photoCars;
+    private int photolsCars;
     private String TextDetail;
 
     public String getTextDetail() {
@@ -25,6 +26,14 @@ public class Mobil {
 
     public String getYears() {
         return years;
+    }
+
+    public int getPhotolsCars() {
+        return photolsCars;
+    }
+
+    public void setPhotolsCars(int photolsCars) {
+        this.photolsCars = photolsCars;
     }
 
     public void setYears(String years) {
