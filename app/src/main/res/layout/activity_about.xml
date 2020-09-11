@@ -32,8 +32,7 @@
         android:layout_height="match_parent"
         android:background="@color/colorAccent"
         android:gravity="center_vertical"
-        android:orientation="horizontal"
-        android:paddingBottom="20dp">
+        android:orientation="horizontal">
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -102,8 +101,8 @@
                     app:cardCornerRadius="8dp">
 
                     <ImageView
-                        android:layout_width="60dp"
-                        android:layout_height="60dp"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
                         android:layout_marginStart="16dp"
                         android:layout_marginTop="16dp"
                         android:layout_marginBottom="8dp"
@@ -118,12 +117,12 @@
                         android:fontFamily="@font/raleway_regular"
                         android:text="kurniaihsan58@gmail.com"
                         android:textColor="#fff"
-                        android:textSize="18dp" />
+                        android:textSize="14dp" />
 
                     <ImageView
                         android:id="@+id/github"
-                        android:layout_width="60dp"
-                        android:layout_height="60dp"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
                         android:layout_gravity="center_vertical"
                         android:layout_marginStart="16dp"
                         android:layout_marginTop="20dp"
@@ -133,25 +132,26 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginStart="90dp"
-                        android:layout_marginTop="100dp"
+                        android:layout_marginTop="105dp"
                         android:fontFamily="@font/raleway_regular"
                         android:text="https://github.com/IhsanKurnia"
                         android:textColor="#fff"
-                        android:textSize="18dp" />
+                        android:textSize="14dp" />
                 </androidx.cardview.widget.CardView>
             </LinearLayout>
+
         </LinearLayout>
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginStart="75dp"
-            android:layout_marginTop="600dp"
+            android:layout_marginStart="80dp"
+            android:layout_marginTop="550dp"
             android:textAlignment="center"
             android:fontFamily="@font/raleway_thin"
             android:text="GearBoxShop 2020 Create By: Ihsan Kurnia"
             android:textColor="#fff"
-            android:textSize="14dp" />
+            android:textSize="12dp" />
     </RelativeLayout>
 
 </LinearLayout>
