@@ -62,9 +62,7 @@ public class modelData {
 
     /*Performa*/
     private static String[] performance = new String[]{
-            /*Aston Martin*/
             "5200(cc) ", "1988(cc)", "1997(cc)", "1197(cc)", "1998(cc)", "2360(cc)", "1332(cc)", "2488(cc)", "2998(cc)", "5204(cc)"
-            /*End Aston martin*/
     };
     /*Performa*/
 
@@ -261,6 +259,10 @@ public class modelData {
             mobil.setManufacture(manufacture[position]);
             mobil.setPhotoCars(photo[position]);
             mobil.setTextDetail(textView[position]);
+            /*New Data list detail*/
+            mobil.setPhotoMerk(photoMerk[position]);
+            mobil.setPerforma(performance[position]);
+            /*End data list detil new*/
             list.add(mobil);
         }
 
