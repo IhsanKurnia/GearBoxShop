@@ -10,7 +10,7 @@
     <!--Toolbar Navigasi-->
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="50dp"
+        android:layout_height="65dp"
         android:gravity="center_vertical"
         android:orientation="horizontal">
 
@@ -31,7 +31,8 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginEnd="16dp"
-            android:padding="9dp"
+            android:background="@drawable/list_person"
+            android:padding="10dp"
             android:src="@drawable/ic_baseline_person_24" />
     </LinearLayout>
     <!--ToolBar Navigasi-->
@@ -41,12 +42,17 @@
         android:id="@+id/et_serach_mobil"
         android:layout_width="match_parent"
         android:layout_height="37dp"
-        android:layout_marginStart="8dp"
-        android:layout_marginEnd="8dp"
-        android:fontFamily="@font/raleway_thin"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:fontFamily="@font/raleway_regular"
+        android:paddingBottom="3dp"
+        android:paddingStart="8dp"
         android:hint="Search Mobil"
+        android:background="@drawable/search"
+        android:layout_marginBottom="8dp"
+        android:drawableStart="@drawable/ic_baseline_search_24"
         android:textColor="#000"
-        android:textColorHint="#fff"
+        android:textColorHint="#000"
         android:textSize="16dp" />
     <!--End Search-->
 
