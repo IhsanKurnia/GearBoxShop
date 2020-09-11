@@ -145,11 +145,11 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginStart="140dp"
+            android:layout_marginStart="75dp"
             android:layout_marginTop="600dp"
             android:textAlignment="center"
             android:fontFamily="@font/raleway_thin"
-            android:text="GearBoxShop 2020"
+            android:text="GearBoxShop 2020 Create By: Ihsan Kurnia"
             android:textColor="#fff"
             android:textSize="14dp" />
     </RelativeLayout>

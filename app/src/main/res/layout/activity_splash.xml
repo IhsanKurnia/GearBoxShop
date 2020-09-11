@@ -22,15 +22,16 @@
         android:text="GearBoxShop"
         android:textColor="#FDFDFD"
         android:fontFamily="@font/raleway_medium"
-        android:textSize="20sp"
-        />
+        android:textSize="20sp" />
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_margin="3dp"
-        android:text="Versi Beta"
-        android:fontFamily="@font/raleway_light"
-        android:textColor="#ffff"/>
+        android:textAlignment="center"
+        android:fontFamily="@font/raleway_thin"
+        android:text="Create By: Ihsan Kurnia"
+        android:textColor="#fff"
+        android:textSize="14dp" />
 
 </LinearLayout>
+
