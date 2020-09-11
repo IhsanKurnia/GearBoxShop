@@ -7,18 +7,7 @@ public class Mobil {
     private int photoCars;
     private int photoMerk;
     private String TextDetail;
-    /*New Detail*/
-    private String performa;
-    private String transmision;
 
-
-    public String getPerforma() {
-        return performa;
-    }
-
-    public void setPerforma(String performa) {
-        this.performa = performa;
-    }
 
     public String getTextDetail() {
         return TextDetail;
@@ -68,11 +57,5 @@ public class Mobil {
         this.photoCars = photoCars;
     }
 
-    public String getTransmision() {
-        return transmision;
-    }
 
-    public void setTransmision(String transmision) {
-        this.transmision = transmision;
-    }
 }

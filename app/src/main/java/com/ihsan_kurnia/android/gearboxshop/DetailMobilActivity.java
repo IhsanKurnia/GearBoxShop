@@ -4,7 +4,6 @@ import android.content.Intent;
 import android.graphics.drawable.Drawable;
 import android.os.Bundle;
 import android.view.View;
-import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.TextView;
 
@@ -44,14 +43,6 @@ public class DetailMobilActivity extends AppCompatActivity {
             }
         });
 
-        //Fungsi Tombol about
-        Button btn_next = findViewById(R.id.btn_ab);
-        btn_next.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                goAboutActivity();
-            }
-        });
 
         tvnamaMobil.setText(nameCars);
         tvDetail.setText(TextDetail);
@@ -63,10 +54,6 @@ public class DetailMobilActivity extends AppCompatActivity {
 
     }
 
-    private void goAboutActivity() {
-        Intent intent = new Intent(this.getApplicationContext(), AboutActivity.class);
-        startActivity(intent);
-    }
 
     private void gotoListMobilActivity() {
         Intent intent = new Intent(this.getApplicationContext(), ListMobilActivity.class);

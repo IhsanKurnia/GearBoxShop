@@ -65,7 +65,7 @@ public class MobilListAdapter extends RecyclerView.Adapter<MobilListAdapter.List
         return listMobil.size();
     }
 
-    class ListViewHolder extends RecyclerView.ViewHolder {
+    static class ListViewHolder extends RecyclerView.ViewHolder {
         ImageView imgPhoto;
         TextView tvName, tvYears, tvManufacture;
 

@@ -45,27 +45,6 @@ public class modelData {
     };
     /*End Data Gambar Kendaraan*/
 
-    /*Gambar Merk*/
-    private static int[] photoMerk = {
-            R.drawable.ls_01,
-            R.drawable.ls_02,
-            R.drawable.ls_03,
-            R.drawable.ls_04,
-            R.drawable.ls_05,
-            R.drawable.ls_06,
-            R.drawable.ls_07,
-            R.drawable.ls_08,
-            R.drawable.ls_09,
-            R.drawable.ls_10,
-    };
-    /*End Gambar Merk*/
-
-    /*Performa*/
-    private static String[] performance = new String[]{
-            "5200(cc) ", "1988(cc)", "1997(cc)", "1197(cc)", "1998(cc)", "2360(cc)", "1332(cc)", "2488(cc)", "2998(cc)", "5204(cc)"
-    };
-    /*Performa*/
-
 
     /*Data Detail*/
     private static String[] textView = new String[]{
@@ -260,9 +239,7 @@ public class modelData {
             mobil.setPhotoCars(photo[position]);
             mobil.setTextDetail(textView[position]);
             /*New Data list detail*/
-            mobil.setPhotoMerk(photoMerk[position]);
-            mobil.setPerforma(performance[position]);
-            /*End data list detil new*/
+
             list.add(mobil);
         }
 

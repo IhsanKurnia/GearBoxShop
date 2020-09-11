@@ -20,9 +20,9 @@
             android:layout_marginStart="16dp"
             android:layout_weight="1"
             android:fontFamily="@font/raleway_medium"
+            android:gravity="center"
             android:padding="8dp"
             android:text="GearBox Shop"
-            android:gravity="center"
             android:textColor="#fff"
             android:textSize="20sp" />
 
@@ -36,17 +36,19 @@
     </LinearLayout>
     <!--ToolBar Navigasi-->
 
+    <!--Search-->
     <EditText
+        android:id="@+id/et_serach_mobil"
         android:layout_width="match_parent"
         android:layout_height="37dp"
         android:layout_marginStart="8dp"
         android:layout_marginEnd="8dp"
-        android:textSize="16dp"
         android:fontFamily="@font/raleway_thin"
-        android:drawableStart=""
-        android:textColorHint="#fff"
         android:hint="Search Mobil"
-        android:textColor="#000" />
+        android:textColor="#000"
+        android:textColorHint="#fff"
+        android:textSize="16dp" />
+    <!--End Search-->
 
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/rv_mobil_list"
