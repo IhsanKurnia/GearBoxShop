@@ -55,8 +55,6 @@
                 android:id="@+id/iv_gambar_mobil"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginStart="16dp"
-                android:layout_marginEnd="16dp"
                 android:adjustViewBounds="true"
                 android:background="@drawable/card"
                 android:scaleType="fitXY"
@@ -87,7 +85,7 @@
                 android:fontFamily="@font/raleway_regular"
                 android:justificationMode="inter_word"
                 android:lineSpacingMultiplier="1"
-                android:padding="8dp"
+                android:padding="16dp"
                 android:paddingBottom="8dp"
                 android:text="@string/detail_01"
                 android:textColor="#000"
@@ -125,7 +123,7 @@
                     android:layout_gravity="center_horizontal"
                     android:adjustViewBounds="true"
                     android:padding="8dp"
-                    android:src="@drawable/user_pic" />
+                    android:src="@drawable/max" />
 
                 <TextView
                     android:layout_width="wrap_content"
@@ -134,26 +132,21 @@
                     android:layout_marginTop="90dp"
                     android:fontFamily="@font/raleway_semibold"
                     android:padding="5dp"
-                    android:text="Ihsan Kurnia"
+                    android:text="Max Verstappen"
                     android:textColor="#000" />
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center_horizontal"
+                    android:textAlignment="center"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginEnd="16dp"
                     android:layout_marginTop="120dp"
-                    android:fontFamily="@font/raleway_light"
+                    android:fontFamily="@font/raleway_regular"
                     android:text="@string/quotes"
                     android:textColor="#000" />
 
-                <Button
-                    android:id="@+id/btn_ab"
-                    android:layout_width="40dp"
-                    android:layout_height="40dp"
-                    android:layout_gravity="center_horizontal"
-                    android:layout_marginTop="150dp"
-                    android:background="@drawable/btn_primary_circle"
-                    android:padding="8dp" />
             </androidx.cardview.widget.CardView>
             <!--About me-->
             <!--End Content Penutup-->
