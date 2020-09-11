@@ -1,13 +1,14 @@
 package com.ihsan_kurnia.android.gearboxshop;
 
-import androidx.appcompat.app.AppCompatActivity;
-import androidx.recyclerview.widget.LinearLayoutManager;
-import androidx.recyclerview.widget.RecyclerView;
-
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.ImageView;
+
+import androidx.appcompat.app.AppCompatActivity;
+import androidx.cardview.widget.CardView;
+import androidx.recyclerview.widget.LinearLayoutManager;
+import androidx.recyclerview.widget.RecyclerView;
 
 import java.util.ArrayList;
 
@@ -36,6 +37,9 @@ public class ListMobilActivity extends AppCompatActivity {
         list.addAll(modelData.getListData());
         showRecylerView();
 
+        CardView cardView = findViewById(R.id.layout);
+
+
         //fungsi tombol person
         personIcon.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -46,6 +50,7 @@ public class ListMobilActivity extends AppCompatActivity {
 
 
     }
+
 
     private void showRecylerView() {
         rvMobil.setLayoutManager(new LinearLayoutManager(this));

@@ -5,11 +5,9 @@
     android:layout_height="match_parent"
     android:background="@color/colorAccent"
     android:orientation="vertical"
-    android:clickable="true"
-    android:foreground="?attr/selectableItemBackground"
     tools:context=".ListMobilActivity">
 
-
+    <!--Toolbar Navigasi-->
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="50dp"
@@ -21,8 +19,10 @@
             android:layout_height="wrap_content"
             android:layout_marginStart="16dp"
             android:layout_weight="1"
-            android:fontFamily="@font/roboto_bold"
+            android:fontFamily="@font/raleway_medium"
+            android:padding="9dp"
             android:text="List Mobil"
+            android:gravity="center"
             android:textColor="#fff"
             android:textSize="20sp" />
 
@@ -31,9 +31,21 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginEnd="16dp"
-            android:padding="8dp"
+            android:padding="9dp"
             android:src="@drawable/ic_baseline_person_24" />
     </LinearLayout>
+    <!--ToolBar Navigasi-->
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="37dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:textSize="16dp"
+        android:fontFamily="@font/raleway_regular"
+        android:textColorHint="#000"
+        android:hint="Search Mobil"
+        android:textColor="#fff" />
 
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/rv_mobil_list"

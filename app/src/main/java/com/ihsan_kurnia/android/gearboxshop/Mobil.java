@@ -5,8 +5,18 @@ public class Mobil {
     private String years;
     private String manufacture;
     private int photoCars;
-    private int photolsCars;
+    private int photoMerk;
     private String TextDetail;
+    private String performa;
+
+
+    public String getPerforma() {
+        return performa;
+    }
+
+    public void setPerforma(String performa) {
+        this.performa = performa;
+    }
 
     public String getTextDetail() {
         return TextDetail;
@@ -28,12 +38,12 @@ public class Mobil {
         return years;
     }
 
-    public int getPhotolsCars() {
-        return photolsCars;
+    public int getPhotoMerk() {
+        return photoMerk;
     }
 
-    public void setPhotolsCars(int photolsCars) {
-        this.photolsCars = photolsCars;
+    public void setPhotoMerk(int photoMerk) {
+        this.photoMerk = photoMerk;
     }
 
     public void setYears(String years) {

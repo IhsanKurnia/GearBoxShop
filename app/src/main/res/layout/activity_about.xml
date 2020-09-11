@@ -4,34 +4,141 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/bg_sp"
-    android:gravity="center"
+    android:background="@color/colorAccent"
     android:orientation="vertical"
     tools:context=".AboutActivity">
 
-    <ImageView
-        android:layout_width="150dp"
-        android:layout_height="150dp"
-        android:layout_margin="5dp"
-        android:adjustViewBounds="true"
-        android:src="@drawable/user_pic" />
+    <!--Navigasi Detail-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@color/colorAccent"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:fontFamily="@font/roboto_bold"
-        android:padding="5dp"
-        android:text="Ihsan Kurnia"
-        android:textColor="#FFFF"
-        android:textSize="20sp" />
+        <ImageView
+            android:id="@+id/back_detail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:padding="8dp"
+            android:src="@drawable/ic_baseline_arrow_back_24" />
+    </LinearLayout>
+    <!--Navigasi-->
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:fontFamily="@font/roboto_regular"
-        android:padding="5dp"
-        android:text="kurniaihsan58@gmail.com"
-        android:textColor="#ffff"
-        android:textSize="16sp" />
+    <!--ScrollView-->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="669dp"
+        android:scrollbars="none">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/colorAccent"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingBottom="20dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+                <!--Content card-->
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="300dp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginEnd="16dp"
+                    android:paddingBottom="20dp"
+                    app:cardBackgroundColor="#846AD3"
+                    app:cardCornerRadius="8dp">
+
+                    <ImageView
+                        android:id="@+id/img_about"
+                        android:layout_width="120dp"
+                        android:layout_height="120dp"
+                        android:layout_gravity="center"
+                        android:layout_margin="5dp"
+                        android:adjustViewBounds="true"
+                        android:background="@drawable/circle"
+                        android:src="@drawable/user_pic" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/img_about"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="80dp"
+                        android:fontFamily="@font/raleway_bold"
+                        android:padding="5dp"
+                        android:text="Ihsan Kurnia"
+                        android:textColor="#FFFF"
+                        android:textSize="20sp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="100dp"
+                        android:fontFamily="@font/raleway_light"
+                        android:padding="5dp"
+                        android:text="Android Pemula"
+                        android:textColor="#ffff"
+                        android:textSize="16sp" />
+                </androidx.cardview.widget.CardView>
+
+                <LinearLayout
+                    android:layout_width="395dp"
+                    android:layout_height="103dp"
+                    android:orientation="horizontal">
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="380dp"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginStart="16dp"
+                        android:layout_marginTop="8dp"
+                        android:layout_marginEnd="16dp"
+                        android:paddingBottom="20dp"
+                        app:cardBackgroundColor="#846AD3"
+                        app:cardCornerRadius="8dp">
+
+                        <ImageView
+                            android:id="@+id/email"
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
+                            android:layout_marginStart="16dp"
+                            android:layout_marginTop="16dp"
+                            android:src="@drawable/kalender" />
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:layout_weight="1"
+                            android:fontFamily="@font/raleway_bold"
+                            android:gravity="center_horizontal"
+                            android:text="kurniaihsan58@gmail.com"
+                            android:textSize="20dp" />
+                    </androidx.cardview.widget.CardView>
+
+                </LinearLayout>
+
+            </LinearLayout>
+        </RelativeLayout>
+        <!--Content Card-->
+
+
+        <!--Data content-->
+
+        <!--Data Content-->
+
+
+    </ScrollView>
+
+    <!--ScrollView-->
 
 </LinearLayout>

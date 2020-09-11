@@ -5,26 +5,26 @@ import java.util.ArrayList;
 public class modelData {
     /*Data Nama Kendaraan*/
     private static String[] namesCars = {
-            "Aston Martin D11",
-            "Mazda MX-5",
-            "Jaguar F Type 2013",
-            "Volkswegen Typ R",
-            "BMW 6 Series",
-            "Mitsubishi OutLander PHEV",
-            "Mercedes Benz Cla Gen-2",
-            "Mazda CX-9 Gen-2",
-            "Supra Generasi 5",
-            "Lamborgini Huracan"
+            "Aston Martin D11 DBS Superleggera",
+            "Mazda MX-5 Generasi 4 Skyactiv-G 2.0",
+            "Jaguar F Type 2013 Coupe",
+            "Volkswegen Polo Generasi 5 (Typ R) 1.2 TSI AT",
+            "BMW 6 Series Generasi 4 (G32) 630i Gran Turismo Luxury",
+            "Mitsubishi OutLander PHEV Generasi 3 2.4",
+            "Mercedes Benz CLA Generasi 2 (c118) CLA200 AMG LINE",
+            "Mazda CX-9 Genersi 2 SKYACTIV-G",
+            "Toyota Supra Generasi 5 GR SUPRA",
+            "Lamborgini Huracan Generasi 1 (LP 610-4 coupe)"
     };
     /*End Data Nama Kendaraan*/
 
     private static String[] years = {
-            "Tahun: 2016", "Tahun: 2016 ", "Tahun: 2013", "Tahun: 2013", "Tahun: 2013", "Tahun: 2019", "Tahun: 2019", "Tahun: 2017", "Tahun: 2019", "Tahun: 2014"
+            "Tahun: 2016", "Tahun: 2016 ", "Tahun: 2013", "Tahun: 2009", "Tahun: 2017", "Tahun: 2019", "Tahun: 2019", "Tahun: 2017", "Tahun: 2019", "Tahun: 2014"
     };
 
     /*Data Merk Kendaraan*/
     private static String[] manufacture = {
-            "Pabrikan: Aston Martin", "Pabrikan: Mazda", "Pabrikan: Jaguar", "Pabrikan: Volkswegen", "Pabrikan: BMW", "Pabrikan: Mitsubishi", "Pabrikan: Mercedes Benz", "Pabrikan: Mazda", "Pabrikan: Toyota",
+            "Pabrikan: Aston Martin", "Pabrikan: Mazda", "Pabrikan: Jaguar", "Pabrikan: Volkswegen", "Pabrikan: BMW", "Pabrikan: Mitsubishi Motors", "Pabrikan: Mercedes Benz", "Pabrikan: Mazda", "Pabrikan: Toyota",
             "Pabrikan: Lamborgini"
 
     };
@@ -44,6 +44,29 @@ public class modelData {
             R.drawable.ls_10,
     };
     /*End Data Gambar Kendaraan*/
+
+    /*Gambar Merk*/
+    private static int[] photoMerk = {
+            R.drawable.ls_01,
+            R.drawable.ls_02,
+            R.drawable.ls_03,
+            R.drawable.ls_04,
+            R.drawable.ls_05,
+            R.drawable.ls_06,
+            R.drawable.ls_07,
+            R.drawable.ls_08,
+            R.drawable.ls_09,
+            R.drawable.ls_10,
+    };
+    /*End Gambar Merk*/
+
+    /*Performa*/
+    private static String[] performance = new String[]{
+            /*Aston Martin*/
+            "5200(cc) ", "1988(cc)", "1997(cc)", "1197(cc)", "1998(cc)", "2360(cc)", "1332(cc)", "2488(cc)", "2998(cc)", "5204(cc)"
+            /*End Aston martin*/
+    };
+    /*Performa*/
 
 
     /*Data Detail*/

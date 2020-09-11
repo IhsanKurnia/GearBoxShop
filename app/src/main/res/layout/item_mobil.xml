@@ -1,82 +1,76 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:padding="16dp"
-    android:orientation="vertical"
-    app:cardPreventCornerOverlap="true"
-    app:cardUseCompatPadding="true"
-    android:animationCache="true"
-    app:cardCornerRadius="8dp"
-    app:cardBackgroundColor="#846AD3">
+    android:layout_marginStart="8dp"
+    android:layout_marginEnd="8dp">
 
-
-    <RelativeLayout
+    <androidx.cardview.widget.CardView
+        android:id="@+id/layout"
         android:layout_width="match_parent"
-        android:layout_height="130dp"
-        android:gravity="center">
+        android:layout_height="match_parent"
+        android:layout_margin="8dp"
+        android:animationCache="true"
+        app:cardBackgroundColor="#846AD3"
+        app:cardCornerRadius="20dp">
 
-        <ImageView
-            android:id="@+id/img_item_mobil"
-            android:layout_width="100dp"
-            android:layout_height="100dp"
-            android:layout_gravity="center_vertical"
-            android:layout_marginStart="8dp"
-            android:layout_marginTop="16dp"
-            android:layout_marginEnd="16dp"
-            android:layout_marginBottom="16dp"
-            android:background="@drawable/circle"
-            android:adjustViewBounds="true"
-            android:scaleType="fitCenter"
-            tools:src="@drawable/ls_01" />
-
-        <TextView
-            android:id="@+id/tv_name_cars"
+        <RelativeLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="1dp"
-            android:layout_marginTop="20dp"
-            android:layout_toEndOf="@+id/img_item_mobil"
-            android:fontFamily="@font/roboto_bold"
-            android:text="Nama Kendaraan"
-            android:textColor="#fff"
-            android:textSize="18sp" />
+            android:layout_height="320dp">
 
-        <TextView
-            android:id="@+id/tv_years"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_alignTop="@+id/tv_name_cars"
-            android:layout_marginStart="1dp"
-            android:layout_marginTop="10dp"
-            android:layout_marginEnd="8dp"
-            android:layout_toEndOf="@+id/img_item_mobil"
-            android:fontFamily="@font/roboto_bold"
-            android:gravity="center_vertical"
-            android:paddingTop="18dp"
-            android:text="Tahun"
-            android:textColor="#fff"
-            android:textSize="18sp" />
+            <ImageView
+                android:id="@+id/img_item_mobil"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:layout_gravity="center_vertical"
+                android:adjustViewBounds="true"
+                android:background="@drawable/bg_list_photo"
+                android:scaleType="centerCrop"
+                tools:src="@drawable/ls_01" />
 
-        <TextView
-            android:id="@+id/tv_manufacture"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_alignTop="@+id/tv_name_cars"
-            android:layout_marginStart="1dp"
-            android:layout_marginTop="38dp"
-            android:layout_marginEnd="8dp"
-            android:layout_toEndOf="@+id/img_item_mobil"
-            android:fontFamily="@font/roboto_bold"
-            android:gravity="clip_vertical"
-            android:paddingTop="16dp"
-            android:text="Pabrikan"
-            android:textColor="#fff"
-            android:textSize="18dp" />
+            <TextView
+                android:id="@+id/tv_name_cars"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/img_item_mobil"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="10dp"
+                android:fontFamily="@font/raleway_bold"
+                android:text="Nama Kendaraan"
+                android:textColor="#fff"
+                android:textSize="16dp" />
 
-    </RelativeLayout>
+            <TextView
+                android:id="@+id/tv_years"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tv_name_cars"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="3dp"
+                android:fontFamily="@font/raleway_regular"
+                android:paddingTop="3dp"
+                android:text="Tahun"
+                android:textColor="#fff"
+                android:textSize="16dp" />
+
+            <TextView
+                android:id="@+id/tv_manufacture"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@id/tv_years"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="3dp"
+                android:fontFamily="@font/raleway_thin"
+                android:text="Pabrikan"
+                android:textColor="#fff"
+                android:textSize="16dp" />
+
+        </RelativeLayout>
 
 
-</androidx.cardview.widget.CardView>
+    </androidx.cardview.widget.CardView>
+
+
+</LinearLayout>

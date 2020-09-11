@@ -1,13 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:gravity="center"
     android:orientation="vertical"
-    android:background="@drawable/bg_sp"
+    android:background="@color/colorAccent"
     tools:context=".SplashActivity">
 
     <ImageView
@@ -20,10 +18,10 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_margin="8dp"
-        android:padding="5dp"
+        android:padding="7dp"
         android:text="GearBoxShop"
         android:textColor="#FDFDFD"
-        android:fontFamily="@font/roboto_medium"
+        android:fontFamily="@font/raleway_medium"
         android:textSize="20sp"
         />
 
@@ -32,7 +30,7 @@
         android:layout_height="wrap_content"
         android:layout_margin="3dp"
         android:text="Versi Beta"
-        android:fontFamily="@font/roboto_regular"
+        android:fontFamily="@font/raleway_light"
         android:textColor="#ffff"/>
 
 </LinearLayout>

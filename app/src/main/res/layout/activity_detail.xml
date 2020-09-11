@@ -28,7 +28,7 @@
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:fontFamily="@font/roboto_bold"
+            android:fontFamily="@font/raleway_medium"
             android:text="Review Mobil"
             android:textColor="#fff"
             android:textSize="20sp" />
@@ -40,21 +40,23 @@
     <ScrollView
         android:id="@+id/scroll_detail"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+        android:layout_height="wrap_content"
+        android:scrollbars="none">
 
         <!--Content Titile-->
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_marginTop="@dimen/cardview_default_radius"
-            android:orientation="vertical">
+            android:orientation="vertical"
+            android:paddingBottom="20dp">
             <!--Content Image-->
             <ImageView
                 android:id="@+id/iv_gambar_mobil"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginStart="8dp"
-                android:layout_marginEnd="8dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginEnd="16dp"
                 android:adjustViewBounds="true"
                 android:background="@drawable/card"
                 android:scaleType="fitXY"
@@ -65,9 +67,10 @@
                 android:id="@+id/tv_nama_mobil"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:layout_marginStart="7dp"
                 android:background="@color/colorAccent"
-                android:fontFamily="@font/roboto_bold"
-                android:padding="16dp"
+                android:fontFamily="@font/raleway_medium"
+                android:padding="15dp"
                 android:text="Nama Mobil"
                 android:textColor="#fff"
                 android:textSize="20sp" />
@@ -76,15 +79,15 @@
             <!--Content Detail-->
             <TextView
                 android:id="@+id/tv_detail"
-                android:layout_width="match_parent"
+                android:layout_width="wrap_content"
                 android:layout_height="match_parent"
-                android:layout_marginStart="8dp"
-                android:layout_marginEnd="8dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginEnd="16dp"
                 android:background="@drawable/detail"
-                android:fontFamily="@font/roboto_regular"
+                android:fontFamily="@font/raleway_regular"
                 android:justificationMode="inter_word"
-                android:lineSpacingMultiplier="1.5"
-                android:padding="16dp"
+                android:lineSpacingMultiplier="1"
+                android:padding="8dp"
                 android:paddingBottom="8dp"
                 android:text="@string/detail_01"
                 android:textColor="#000"
@@ -96,283 +99,142 @@
                 android:id="@+id/tv_spesifikasi"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
+                android:layout_marginStart="8dp"
                 android:background="@color/colorAccent"
                 android:drawablePadding="8dp"
-                android:fontFamily="@font/roboto_bold"
+                android:fontFamily="@font/raleway_medium"
                 android:padding="15dp"
-                android:text="Spesifikasi Mobil"
+                android:text="Kesimpulan"
                 android:textColor="#fff"
                 android:textSize="20sp" />
             <!--Content title Spek-->
 
-            <!--Scroll Horizontal-->
-            <HorizontalScrollView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginBottom="8dp"
-                android:scrollbars="vertical">
+            <!--Spesifikasi card calender-->
+            <androidx.cardview.widget.CardView
+                android:layout_width="150dp"
+                android:layout_height="170dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginBottom="20dp"
+                android:padding="10dp"
+                app:cardBackgroundColor="#0277BD"
+                app:cardCornerRadius="8dp">
 
                 <LinearLayout
-                    android:layout_width="wrap_content"
+                    android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:orientation="horizontal">
 
-                    <!--Release mobil-->
-                    <androidx.cardview.widget.CardView
-                        android:id="@+id/tv_content"
-                        android:layout_width="144dp"
-                        android:layout_height="150dp"
-                        android:layout_marginStart="8dp"
-                        android:layout_marginEnd="8dp"
-                        android:background="@drawable/ls_01"
-                        android:fontFamily="@font/roboto_regular"
-                        android:lineSpacingMultiplier="1"
-                        android:padding="16dp"
-                        android:paddingBottom="8dp"
-                        android:text="Latihan "
-                        android:textColor="#000"
-                        app:cardBackgroundColor="@color/colorPrimary"
-                        app:cardCornerRadius="8dp">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="16dp"
+                        android:layout_marginStart="16dp"
+                        android:layout_marginEnd="16dp"
+                        android:orientation="vertical">
 
-                        <LinearLayout
-                            android:layout_width="match_parent"
+                        <ImageView
+                            android:layout_width="90dp"
+                            android:layout_height="90dp"
+                            android:layout_gravity="center"
+                            android:src="@drawable/kalender" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:gravity="center"
-                            android:orientation="vertical">
+                            android:text="Release"
+                            android:layout_gravity="center"
+                            android:padding="8dp"
+                            android:textSize="14dp"
+                            android:textColor="#fff"
+                            android:fontFamily="@font/raleway_semibold" />
 
-                            <ImageView
-                                android:id="@+id/img_item_kalender"
-                                android:layout_width="100dp"
-                                android:layout_height="100dp"
-                                android:layout_marginStart="16dp"
-                                android:layout_marginTop="16dp"
-                                android:layout_marginEnd="16dp"
-                                android:adjustViewBounds="true"
-                                android:background="@drawable/circle"
-                                android:scaleType="fitCenter"
-                                tools:src="@drawable/ls_01" />
-
-                            <TextView
-                                android:layout_width="match_parent"
-                                android:layout_height="wrap_content"
-                                android:layout_alignBottom="@+id/img_item_mobil"
-                                android:layout_marginBottom="8dp"
-                                android:fontFamily="@font/roboto_bold"
-                                android:gravity="center"
-                                android:text="Tahun Release"
-                                android:textColor="#fff"
-                                android:textSize="14dp" />
-                        </LinearLayout>
-                    </androidx.cardview.widget.CardView>
-                    <!--End Release mobil-->
-
-
-                    <!--Pabrikan Mobil-->
-                    <androidx.cardview.widget.CardView
-                        android:id="@+id/tv_content2"
-                        android:layout_width="150dp"
-                        android:layout_height="150dp"
-                        android:layout_marginStart="8dp"
-                        android:layout_marginEnd="8dp"
-                        android:fontFamily="@font/roboto_regular"
-                        android:lineSpacingMultiplier="1"
-                        android:padding="16dp"
-                        android:paddingBottom="8dp"
-                        android:text="Latihan "
-                        android:textColor="#000"
-                        app:cardBackgroundColor="@color/colorPrimary"
-                        app:cardCornerRadius="8dp">
-
-                        <LinearLayout
-                            android:layout_width="match_parent"
+                        <TextView
+                            android:id="@+id/tv_tahun"
+                            android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:gravity="center"
-                            android:orientation="vertical">
+                            android:text="Tahun: 2019"
+                            android:layout_gravity="center"
+                            android:textSize="16dp"
+                            android:fontFamily="@font/raleway_regular"
+                            android:textColor="#fff" />
 
-                            <ImageView
-                                android:id="@+id/img_item_pabrikan"
-                                android:layout_width="100dp"
-                                android:layout_height="100dp"
-                                android:layout_marginStart="16dp"
-                                android:layout_marginTop="16dp"
-                                android:layout_marginEnd="16dp"
-                                android:adjustViewBounds="true"
-                                android:background="@drawable/circle"
-                                android:scaleType="fitCenter"
-                                tools:src="@drawable/ls_01" />
-
-                            <TextView
-                                android:layout_width="match_parent"
-                                android:layout_height="wrap_content"
-                                android:layout_alignBottom="@+id/img_item_mobil"
-                                android:layout_marginBottom="8dp"
-                                android:fontFamily="@font/roboto_bold"
-                                android:gravity="center"
-                                android:text="Pabrikan"
-                                android:textColor="#fff"
-                                android:textSize="14dp" />
-                        </LinearLayout>
-
-                    </androidx.cardview.widget.CardView>
-                    <!-- End Pabrikan Mobil-->
-
-                    <!--Tahun merk-->
-                    <androidx.cardview.widget.CardView
-                        android:id="@+id/tv_content3"
-                        android:layout_width="150dp"
-                        android:layout_height="150dp"
-                        android:layout_marginStart="8dp"
-                        android:layout_marginEnd="8dp"
-                        android:fontFamily="@font/roboto_regular"
-                        android:lineSpacingMultiplier="1"
-                        android:padding="16dp"
-                        android:paddingBottom="8dp"
-                        android:text="Latihan "
-                        android:textColor="#000"
-                        app:cardBackgroundColor="@color/colorPrimary"
-                        app:cardCornerRadius="8dp">
-
-                        <LinearLayout
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:gravity="center"
-                            android:orientation="vertical">
-
-                            <ImageView
-                                android:id="@+id/img_item_merk"
-                                android:layout_width="100dp"
-                                android:layout_height="100dp"
-                                android:layout_marginStart="16dp"
-                                android:layout_marginTop="16dp"
-                                android:layout_marginEnd="16dp"
-                                android:adjustViewBounds="true"
-                                android:background="@drawable/circle"
-                                android:scaleType="fitCenter"
-                                tools:src="@drawable/ls_01" />
-
-                            <TextView
-                                android:layout_width="match_parent"
-                                android:layout_height="wrap_content"
-                                android:layout_alignBottom="@+id/img_item_mobil"
-                                android:layout_marginBottom="8dp"
-                                android:fontFamily="@font/roboto_bold"
-                                android:gravity="center"
-                                android:text="Manufacture"
-                                android:textColor="#fff"
-                                android:textSize="14dp" />
-                        </LinearLayout>
-
-                    </androidx.cardview.widget.CardView>
-                    <!--End Data merk-->
-
-
-                    <!-- Harga -->
-                    <androidx.cardview.widget.CardView
-                        android:id="@+id/tv_content4"
-                        android:layout_width="150dp"
-                        android:layout_height="150dp"
-                        android:layout_marginStart="8dp"
-                        android:layout_marginEnd="8dp"
-                        android:fontFamily="@font/roboto_regular"
-                        android:lineSpacingMultiplier="1"
-                        android:padding="16dp"
-                        android:paddingBottom="8dp"
-                        android:text="Latihan "
-                        app:cardBackgroundColor="@color/colorPrimary"
-                        app:cardCornerRadius="8dp">
-
-                        <LinearLayout
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:gravity="center"
-                            android:orientation="vertical">
-
-                            <ImageView
-                                android:id="@+id/img_item_Harga"
-                                android:layout_width="100dp"
-                                android:layout_height="100dp"
-                                android:layout_marginStart="16dp"
-                                android:layout_marginTop="16dp"
-                                android:layout_marginEnd="16dp"
-                                android:adjustViewBounds="true"
-                                android:background="@drawable/circle"
-                                android:scaleType="fitCenter"
-                                tools:src="@drawable/ls_01" />
-
-                            <TextView
-                                android:layout_width="match_parent"
-                                android:layout_height="wrap_content"
-                                android:layout_alignBottom="@+id/img_item_mobil"
-                                android:layout_marginBottom="8dp"
-                                android:fontFamily="@font/roboto_bold"
-                                android:gravity="center"
-                                android:text="Harga"
-                                android:textColor="#fff"
-                                android:textSize="14dp" />
-                        </LinearLayout>
-
-
-                    </androidx.cardview.widget.CardView>
-                    <!--Harga-->
-
-                    <!--Type Mobil-->
-                    <androidx.cardview.widget.CardView
-                        android:id="@+id/tv_content5"
-                        android:layout_width="150dp"
-                        android:layout_height="150dp"
-                        android:layout_marginStart="8dp"
-                        android:layout_marginEnd="8dp"
-                        android:fontFamily="@font/roboto_regular"
-                        android:lineSpacingMultiplier="1"
-                        android:padding="16dp"
-                        android:paddingBottom="8dp"
-                        android:text="Latihan "
-                        android:textColor="#000"
-                        app:cardBackgroundColor="@color/colorPrimary"
-                        app:cardCornerRadius="8dp">
-
-                        <LinearLayout
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:gravity="center"
-                            android:orientation="vertical">
-
-                            <ImageView
-                                android:id="@+id/img_item_type"
-                                android:layout_width="100dp"
-                                android:layout_height="100dp"
-                                android:layout_marginStart="16dp"
-                                android:layout_marginTop="16dp"
-                                android:layout_marginEnd="16dp"
-                                android:adjustViewBounds="true"
-                                android:background="@drawable/circle"
-                                android:scaleType="fitCenter"
-                                tools:src="@drawable/ls_01" />
-
-                            <TextView
-                                android:layout_width="match_parent"
-                                android:layout_height="wrap_content"
-                                android:layout_alignBottom="@+id/img_item_mobil"
-                                android:layout_marginBottom="8dp"
-                                android:fontFamily="@font/roboto_bold"
-                                android:gravity="center"
-                                android:text="Type Mobil"
-                                android:textColor="#fff"
-                                android:textSize="14dp" />
-                        </LinearLayout>
-
-                    </androidx.cardview.widget.CardView>
-                    <!--Type Mobil-->
-
+                    </LinearLayout>
                 </LinearLayout>
-            </HorizontalScrollView>
+            </androidx.cardview.widget.CardView>
+            <!--Content Spek card-->
 
-            <!--Content penutup-->
+            <!--Card Pabrikan-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="150dp"
+                    android:layout_height="170dp"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginEnd="8dp"
+                    android:layout_marginBottom="20dp"
+                    android:padding="10dp"
+                    app:cardBackgroundColor="#0277BD"
+                    app:cardCornerRadius="8dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginTop="16dp"
+                            android:layout_marginStart="16dp"
+                            android:layout_marginEnd="16dp"
+                            android:orientation="vertical">
+
+                            <ImageView
+                                android:layout_width="90dp"
+                                android:layout_height="90dp"
+                                android:layout_gravity="center"
+                                android:src="@drawable/kalender" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Release"
+                                android:layout_gravity="center"
+                                android:padding="8dp"
+                                android:textSize="14dp"
+                                android:textColor="#fff"
+                                android:fontFamily="@font/raleway_semibold" />
+
+                            <TextView
+                                android:id="@+id/tv_merk"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Tahun: 2019"
+                                android:layout_gravity="center"
+                                android:textSize="16dp"
+                                android:fontFamily="@font/raleway_regular"
+                                android:textColor="#fff" />
+
+                        </LinearLayout>
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+
+
+            </LinearLayout>
+            <!--End Card Pabrikan-->
+
+
+            <!--About me-->
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginStart="8dp"
-                android:fontFamily="@font/roboto_bold"
+                android:fontFamily="@font/raleway_medium"
+                android:gravity="center"
                 android:padding="10dp"
                 android:text="About me"
                 android:textColor="#fff"
@@ -380,12 +242,12 @@
 
             <androidx.cardview.widget.CardView
                 android:layout_width="match_parent"
-                android:layout_height="match_parent"
+                android:layout_height="200dp"
                 android:layout_marginStart="8dp"
                 android:layout_marginEnd="8dp"
                 android:layout_marginBottom="20dp"
                 android:padding="10dp"
-                app:cardBackgroundColor="#EBEFF0"
+                app:cardBackgroundColor="#fff"
                 app:cardCornerRadius="8dp">
 
                 <ImageView
@@ -402,17 +264,17 @@
                     android:layout_height="wrap_content"
                     android:layout_gravity="center_horizontal"
                     android:layout_marginTop="90dp"
-                    android:fontFamily="@font/roboto_bold"
+                    android:fontFamily="@font/raleway_semibold"
                     android:padding="5dp"
                     android:text="Ihsan Kurnia"
                     android:textColor="#000" />
 
-                <com.codesgood.views.JustifiedTextView
+                <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center_horizontal"
                     android:layout_marginTop="120dp"
-                    android:fontFamily="@font/roboto_thin"
+                    android:fontFamily="@font/raleway_light"
                     android:text="@string/quotes"
                     android:textColor="#000" />
 
@@ -421,10 +283,11 @@
                     android:layout_width="40dp"
                     android:layout_height="40dp"
                     android:layout_gravity="center_horizontal"
-                    android:layout_marginTop="145dp"
+                    android:layout_marginTop="150dp"
                     android:background="@drawable/btn_primary_circle"
                     android:padding="8dp" />
             </androidx.cardview.widget.CardView>
+            <!--About me-->
             <!--End Content Penutup-->
         </LinearLayout>
 
