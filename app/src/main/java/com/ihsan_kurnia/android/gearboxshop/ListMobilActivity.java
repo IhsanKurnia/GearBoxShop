@@ -44,8 +44,6 @@ public class ListMobilActivity extends AppCompatActivity {
         rvMobil.setAdapter(adapter);
 
 
-
-
         //Search
         final EditText etSearch = findViewById(R.id.et_serach_mobil);
         etSearch.addTextChangedListener(new TextWatcher() {

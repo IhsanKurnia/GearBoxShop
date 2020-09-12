@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/ac_bg"
+    android:background="@color/ungu12"
     android:orientation="vertical"
     tools:context=".AboutActivity">
 
@@ -12,7 +12,7 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="60dp"
-        android:background="@drawable/ac_bg"
+        android:background="@color/ungu12"
         android:gravity="center_vertical"
         android:orientation="horizontal">
 
@@ -30,14 +30,13 @@
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:background="@color/colorAccent"
+        android:background="@color/ungu12"
         android:gravity="center_vertical"
         android:orientation="horizontal">
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:background="@drawable/ac_bg"
             android:orientation="vertical">
             <!--Content card-->
             <androidx.cardview.widget.CardView
@@ -54,7 +53,7 @@
                 <FrameLayout
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:background="@drawable/ac_bg">
+                    android:background="@drawable/bg_about_name">
 
 
                     <ImageView
@@ -111,18 +110,17 @@
                     app:cardCornerRadius="8dp">
 
                     <ImageView
-                        android:layout_width="60dp"
+                        android:layout_width="50dp"
                         android:layout_height="50dp"
-                        android:layout_marginStart="8dp"
+                        android:layout_marginStart="16dp"
                         android:layout_marginTop="16dp"
                         android:layout_marginBottom="8dp"
-                        android:background="@drawable/circle"
                         android:src="@drawable/ic_baseline_email_24" />
 
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:layout_marginStart="70dp"
+                        android:layout_marginStart="75dp"
                         android:layout_marginTop="30dp"
                         android:fontFamily="@font/raleway_regular"
                         android:text="kurniaihsan58@gmail.com"
@@ -131,17 +129,17 @@
 
                     <ImageView
                         android:id="@+id/github"
-                        android:layout_width="60dp"
-                        android:layout_height="60dp"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
                         android:layout_gravity="center_vertical"
-                        android:layout_marginStart="8dp"
+                        android:layout_marginStart="16dp"
                         android:layout_marginTop="20dp"
                         android:src="@drawable/git" />
 
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:layout_marginStart="70dp"
+                        android:layout_marginStart="75dp"
                         android:layout_marginTop="105dp"
                         android:fontFamily="@font/raleway_regular"
                         android:text="https://github.com/IhsanKurnia"

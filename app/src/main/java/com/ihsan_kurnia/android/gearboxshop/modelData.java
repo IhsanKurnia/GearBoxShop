@@ -7,25 +7,27 @@ public class modelData {
     private static String[] namesCars = {
             "Aston Martin D11 DBS Superleggera",
             "Mazda MX-5 Generasi 4 Skyactiv-G 2.0",
-            "Jaguar F Type 2013 Coupe",
+            "Jaguar F Type Coupe",
             "Volkswegen Polo Generasi 5 (Typ R) 1.2 TSI AT",
             "BMW 6 Series Generasi 4 (G32) 630i Gran Turismo Luxury",
             "Mitsubishi OutLander PHEV Generasi 3 2.4",
             "Mercedes Benz CLA Generasi 2 (c118) CLA200 AMG LINE",
             "Mazda CX-9 Genersi 2 SKYACTIV-G",
             "Toyota Supra Generasi 5 GR SUPRA",
-            "Lamborgini Huracan Generasi 1 (LP 610-4 coupe)"
+            "Lamborgini Huracan Generasi 1 (LP 610-4 coupe)",
+            "Nissan Kicks Kicks Generasi 1 1.2 e-Power VL",
+            "Honda City 2017 1.5 New City E CVT Facelit",
     };
     /*End Data Nama Kendaraan*/
 
     private static String[] years = {
-            "Tahun: 2016", "Tahun: 2016 ", "Tahun: 2013", "Tahun: 2009", "Tahun: 2017", "Tahun: 2019", "Tahun: 2019", "Tahun: 2017", "Tahun: 2019", "Tahun: 2014"
+            "Tahun: 2016", "Tahun: 2016 ", "Tahun: 2013", "Tahun: 2009", "Tahun: 2017", "Tahun: 2019", "Tahun: 2019", "Tahun: 2017", "Tahun: 2019", "Tahun: 2014", "Tahun: 2019", "Tahun: 2017"
     };
 
     /*Data Merk Kendaraan*/
     private static String[] manufacture = {
             "Pabrikan: Aston Martin", "Pabrikan: Mazda", "Pabrikan: Jaguar", "Pabrikan: Volkswegen", "Pabrikan: BMW", "Pabrikan: Mitsubishi Motors", "Pabrikan: Mercedes Benz", "Pabrikan: Mazda", "Pabrikan: Toyota",
-            "Pabrikan: Lamborgini"
+            "Pabrikan: Lamborgini", "Pabrikan: Nissan", "Pabrikan: Honda",
 
     };
     /*End Data Merk Kendaraan*/
@@ -42,6 +44,8 @@ public class modelData {
             R.drawable.ls_08,
             R.drawable.ls_09,
             R.drawable.ls_10,
+            R.drawable.ls_11,
+            R.drawable.ls_12,
     };
     /*End Data Gambar Kendaraan*/
 
@@ -225,6 +229,29 @@ public class modelData {
                     "3.Lamborghini Huracan adalah sebuah mobil berbentuk mid-rear, yang all-wheel drive nya dipasang dengan mesin dual-clutch dan mesin V10 yang beraspirasi natural sehingga menciptakan 610 hp.\n" +
                     "4.Lamborghini Huracan adalah super mobil yang mampu beraspirasi natural tercepat, yaitu 0-100km/jam membutuhkan waktu 2,8 detik sehingga lebih cepat dari Nissan GT-R. ",
             /*End Data Lamborgini Huracan*/
+
+            /*Nissan Kicks*/
+            "1. Teknologi e-Power\n" +
+                    "\t\tTeknologi ini dapat mempermudah konsumen terutama yang menetap di apartemen atau gedung bertingkat karena tidak harus membangun infrastruktur pengisian daya apa pun." +
+                    "Teknologi e-Power dilengkapi dengan motor listrik EM57, generator dan inverter yang mendapatkan pasokan daya utama dari mesin 1,2 liter DOHC 12-katup tiga silinder." +
+                    "Sistem e-Power menawarkan tenaga maksimal 95 kilowatt (kW) atau setara 127 hp dengan torsi puncak 260 Nm.\n" +
+                    "\t\tSalah satu keunggulan utama dari Kicks e-Power adalah teknologi baterai lithium-ion-nya yang stabil, efisien, dan memiliki retensi daya yang lebih lama daripada baterai jenis lain, serta sedikit perawatannya.\n\n" +
+                    "2. Mode Berkendara\n" +
+                    "\t\tNissan Kicks e-Power memiliki beberapa pilihan mode berkendara; Normal, Smart, Eco dan EV. Jika pengemudi menggunakan model Normal, maka yang dirasakan adalah akselerasi dan tenaga pengereman yang baik ketika melepas kaki dari pedal. " +
+                    "Sensasinya setara dengan pengereman mobil bermesin bensin konvensional.\n" +
+                    "\t\tPada mode S, mobil berakselerasi lebih cepat dengan tenaga pengereman yang ditingkatkan.Lalu mode Eco dapat membantu pengemudi berkendara efisien dan " +
+                    "hemat bahan bakar dengan mengatur daya baterai. Terakhir mode EV, hanya mengandalkan daya listrik baterai yang tersimpan, sehingga berkendara menjadi lebih tenang -tidak bising, serta tanpa pengoperasian mesin bensin.\n\n" +
+                    "3. Satu Pedal\n" +
+                    "\t\tKeunikan lainnya adalah Nissan Kicks e-Power hanya dilengkapi dengan satu pedal. Ini memungkinkan pengemudi dapat berakselerasi dan mengurangi kecepatan kendaraan hanya dengan mengandalkan satu pedal saja.\n" +
+                    "4. Minim Biaya Perawatan \n" +
+                    "\t\tBeda dari mobil bermesin konvensional pada umumnya, Kicks e-Power minim biaya perawatan karena hanya memiliki mesin bensin kecil.",
+            /*End Nissan Kicks*/
+
+            /*Honda*/
+            "\t\tHonda City yang terkenal handal. Generasi terbaru Honda City menggunakan mesin i-VTEC yang dikenal bertenaga dan memiliki tingkat efisiensi bahan bakar yang tinggi. Berbekal mesin 4-silinder segaris, SOHC, 16 katup, i-VTEC + DBW berkapasitas 1,497 cc, " +
+                    "Honda City mampu menyembutkan tenaga hingga 120 PS pada putaran 6,600 rpm. Torsi puncaknya menyentuh level 145 Nm pada putaran 4,600 rpm.\n" + "\t\tSistem transmisi manual 5-percepatan dan sistem transmisi CVT. Di segmen sedan 1.5 liter, performa Honda City dikenal unggul berkat transmisi CVT yang mampu kurangi " +
+                    "emisi gas buang sehingga lebih ramah lingkungan. Selain itu teknologi mesin i-VTEC yang dimiliki mampu membuat mobil sedan ini lebih irit bahan bakar. Tingkat konsumsi bahan bakar untuk Honda City transmisi manual mencapai 16,8 km/liter, sedangkan Honda City transmisi CVT memiliki tingkat konsumsi bahan bakar sebesar 18 km/ liter.",
+            /*Honda City*/
     };
     /*End Data Detail*/
 

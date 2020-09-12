@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/ac_bg"
+    android:background="@color/ungu12"
     android:orientation="vertical"
     tools:context=".DetailMobilActivity">
 
@@ -12,7 +12,7 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="59dp"
-        android:background="@drawable/ac_bg"
+        android:background="@color/ungu12"
         android:gravity="center_vertical"
         android:orientation="horizontal">
 
@@ -44,114 +44,133 @@
         android:scrollbars="none">
 
         <!--Content Titile-->
+
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
+            android:layout_gravity="center_horizontal"
             android:layout_marginTop="8dp"
             android:orientation="vertical"
             android:paddingBottom="20dp">
-            <!--Content Image-->
-            <ImageView
-                android:id="@+id/iv_gambar_mobil"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:adjustViewBounds="true"
-                android:layout_marginStart="8dp"
-                android:layout_marginBottom="8dp"
-                android:layout_marginEnd="8dp"
-                android:background="@drawable/card"
-                android:scaleType="fitXY"
-                android:src="@drawable/ls_01" />
 
-            <TextView
-                android:id="@+id/tv_nama_mobil"
-                android:layout_width="match_parent"
-                android:layout_height="59dp"
-                android:background="@drawable/ac_bg"
-                android:fontFamily="@font/raleway_medium"
-                android:padding="15dp"
-                android:text="Nama Mobil"
-                android:textColor="#fff"
-                android:textSize="20sp" />
-
-            <TextView
-                android:id="@+id/tv_detail"
-                android:layout_width="wrap_content"
-                android:layout_height="match_parent"
-                android:layout_marginStart="16dp"
-                android:layout_marginTop="8dp"
-                android:layout_marginEnd="16dp"
-                android:background="@drawable/detail"
-                android:fontFamily="@font/raleway_regular"
-                android:justificationMode="inter_word"
-                android:lineSpacingMultiplier="1"
-                android:padding="16dp"
-                android:paddingBottom="8dp"
-                android:text="@string/detail_01"
-                android:textColor="#000"
-                android:textSize="14dp" />
-            <!--Content Detail-->
-
-
-            <!--About me-->
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:fontFamily="@font/raleway_medium"
-                android:gravity="center"
-                android:padding="10dp"
-                android:text="Quotes"
-                android:textColor="#fff"
-                android:textSize="20sp" />
-            <!--frame-->
             <androidx.cardview.widget.CardView
                 android:layout_width="match_parent"
-                android:layout_height="200dp"
+                android:layout_height="match_parent"
+                android:layout_margin="8dp"
                 android:layout_marginStart="16dp"
                 android:layout_marginEnd="16dp"
-                android:layout_marginBottom="20dp"
-                android:padding="10dp"
-                android:background="@drawable/car_one"
+                android:elevation="1dp"
+                app:cardBackgroundColor="#6AFFFFFF"
                 app:cardCornerRadius="8dp">
 
-                <ImageView
-                    android:id="@+id/user"
-                    android:layout_width="100dp"
-                    android:layout_height="105dp"
-                    android:layout_gravity="center_horizontal"
-                    android:adjustViewBounds="true"
-                    android:padding="8dp"
-                    android:src="@drawable/max" />
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
 
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center_horizontal"
-                    android:layout_marginTop="90dp"
-                    android:fontFamily="@font/raleway_semibold"
-                    android:padding="5dp"
-                    android:text="Max Verstappen"
-                    android:textColor="#000" />
+                    <ImageView
+                        android:id="@+id/iv_gambar_mobil"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:adjustViewBounds="true"
+                        android:background="@drawable/card"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/ls_01" />
 
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center_horizontal"
-                    android:textAlignment="center"
-                    android:layout_marginStart="16dp"
-                    android:layout_marginEnd="16dp"
-                    android:layout_marginTop="120dp"
-                    android:fontFamily="@font/raleway_regular"
-                    android:text="@string/quotes"
-                    android:textColor="#000" />
+                    <TextView
+                        android:id="@+id/tv_nama_mobil"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_below="@+id/iv_gambar_mobil"
+                        android:fontFamily="@font/raleway_medium"
+                        android:padding="15dp"
+                        android:text="Nama Mobil"
+                        android:textColor="#fff"
+                        android:textSize="20sp" />
+
+                    <TextView
+                        android:id="@+id/tv_detail"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/tv_nama_mobil"
+                        android:layout_marginTop="0dp"
+                        android:background="@drawable/deail"
+                        android:fontFamily="@font/raleway_regular"
+                        android:justificationMode="inter_word"
+                        android:lineSpacingMultiplier="1"
+                        android:padding="16dp"
+                        android:paddingBottom="8dp"
+                        android:text="@string/detail_01"
+                        android:textColor="#000"
+                        android:textSize="14dp" />
+
+
+                    <!--frame-->
+                    <TextView
+                        android:id="@+id/qoutes"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/tv_detail"
+                        android:fontFamily="@font/raleway_medium"
+                        android:gravity="center"
+                        android:layout_marginTop="8dp"
+                        android:padding="10dp"
+                        android:text="Quotes"
+                        android:textColor="#fff"
+                        android:textSize="20sp" />
+
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/card_qoutes"
+                        android:layout_width="match_parent"
+                        android:layout_height="200dp"
+                        android:layout_below="@+id/qoutes"
+                        android:layout_marginStart="16dp"
+                        android:layout_marginEnd="16dp"
+                        android:layout_marginTop="8dp"
+                        android:layout_marginBottom="20dp"
+                        app:cardBackgroundColor="#fff"
+                        android:padding="10dp"
+                        app:cardCornerRadius="8dp">
+
+                        <ImageView
+                            android:id="@+id/user"
+                            android:layout_width="100dp"
+                            android:layout_height="105dp"
+                            android:layout_gravity="center_horizontal"
+                            android:adjustViewBounds="true"
+                            android:padding="8dp"
+                            android:src="@drawable/max" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_horizontal"
+                            android:layout_marginTop="90dp"
+                            android:fontFamily="@font/raleway_semibold"
+                            android:padding="5dp"
+                            android:text="Max Verstappen"
+                            android:textColor="#000" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_horizontal"
+                            android:layout_marginStart="16dp"
+                            android:layout_marginTop="120dp"
+                            android:layout_marginEnd="16dp"
+                            android:fontFamily="@font/raleway_light"
+                            android:text="@string/quotes"
+                            android:textAlignment="center"
+                            android:textColor="#000" />
+
+                    </androidx.cardview.widget.CardView>
+                </RelativeLayout>
 
             </androidx.cardview.widget.CardView>
-            <!--About me-->
-            <!--End Content Penutup-->
+
         </LinearLayout>
 
-        <!-- End Scroll Horizontal-->
 
     </ScrollView>
-    <!--    Scroll Content-->
+
 </LinearLayout>
