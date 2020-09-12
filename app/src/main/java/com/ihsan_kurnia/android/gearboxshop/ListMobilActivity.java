@@ -40,11 +40,10 @@ public class ListMobilActivity extends AppCompatActivity {
         rvMobil = findViewById(R.id.rv_mobil_list);
         rvMobil.setHasFixedSize(true);
         adapter = new MobilListAdapter(listDisplay);
+        rvMobil.setLayoutManager(new LinearLayoutManager(this));
         rvMobil.setAdapter(adapter);
 
-        // menampilakan list
-        list.addAll(modelData.getListData());
-        showRecylerView();
+
 
 
         //Search
@@ -91,7 +90,7 @@ public class ListMobilActivity extends AppCompatActivity {
 
     private void showRecylerView() {
         rvMobil.setLayoutManager(new LinearLayoutManager(this));
-        MobilListAdapter mobilListAdapter = new MobilListAdapter(list);
+        MobilListAdapter mobilListAdapter = new MobilListAdapter(listDisplay);
         rvMobil.setAdapter(mobilListAdapter);
     }
 
