@@ -13,6 +13,7 @@
         android:layout_height="match_parent"
         android:layout_margin="8dp"
         android:animationCache="true"
+        android:elevation="@dimen/cardview_compat_inset_shadow"
         app:cardBackgroundColor="#846AD3"
         app:cardCornerRadius="20dp">
 

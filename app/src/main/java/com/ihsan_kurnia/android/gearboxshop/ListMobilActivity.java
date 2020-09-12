@@ -46,17 +46,18 @@ public class ListMobilActivity extends AppCompatActivity {
         list.addAll(modelData.getListData());
         showRecylerView();
 
+
         //Search
-        EditText etSearch = findViewById(R.id.et_serach_mobil);
+        final EditText etSearch = findViewById(R.id.et_serach_mobil);
         etSearch.addTextChangedListener(new TextWatcher() {
             @Override
             public void beforeTextChanged(CharSequence s, int start, int count, int after) {
-                /*Not Used*/
+                /*Tidak terpakai*/
             }
 
             @Override
             public void onTextChanged(CharSequence s, int start, int before, int count) {
-                /*Not Used*/
+                /*Tidak Terpakai*/
             }
 
             @Override
@@ -66,7 +67,7 @@ public class ListMobilActivity extends AppCompatActivity {
                     listDisplay.clear();
                     for (Mobil mobil : list) {
                         String nameCars = mobil.getNameCars().toLowerCase();
-                        if (nameCars.contains(searchkey.toLowerCase())) {
+                        if (nameCars.toLowerCase().contains(searchkey.toLowerCase())) {
                             listDisplay.add(mobil);
 
                         }
@@ -75,8 +76,7 @@ public class ListMobilActivity extends AppCompatActivity {
                 }
             }
         });
-
-
+        /*New Code*/
         //fungsi tombol person
         personIcon.setOnClickListener(new View.OnClickListener() {
             @Override
