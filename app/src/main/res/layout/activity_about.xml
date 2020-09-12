@@ -106,7 +106,7 @@
                     android:layout_marginStart="16dp"
                     android:layout_marginTop="8dp"
                     android:layout_marginEnd="16dp"
-                    app:cardBackgroundColor="@color/transparant"
+                    app:cardBackgroundColor="@color/ungu12"
                     android:paddingBottom="20dp"
                     app:cardCornerRadius="8dp">
 
@@ -136,7 +136,7 @@
                         android:layout_gravity="center_vertical"
                         android:layout_marginStart="16dp"
                         android:layout_marginTop="20dp"
-                        android:src="@drawable/git" />
+                        android:src="@drawable/github" />
 
                     <TextView
                         android:layout_width="wrap_content"
