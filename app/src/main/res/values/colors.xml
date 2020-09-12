@@ -4,4 +4,6 @@
     <color name="colorPrimaryDark">#315A428F</color>
     <color name="colorAccent">#257B68FB</color>
     <color name="ungu12">#846AD3</color>
+    <color name="transparant">#1EFFFFFF</color>
+    <color name="putih12">#ffff</color>
 </resources>

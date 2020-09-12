@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/ungu12"
+    android:background="@color/transparant"
     android:orientation="vertical"
     tools:context=".AboutActivity">
 
@@ -12,7 +12,7 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="60dp"
-        android:background="@color/ungu12"
+        android:background="@drawable/bg_latar"
         android:gravity="center_vertical"
         android:orientation="horizontal">
 
@@ -30,7 +30,7 @@
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:background="@color/ungu12"
+        android:background="@drawable/bg_latar"
         android:gravity="center_vertical"
         android:orientation="horizontal">
 
@@ -96,7 +96,8 @@
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="200dp"
-                android:orientation="vertical">
+                android:orientation="vertical"
+                android:background="@drawable/bg_latar">
 
                 <androidx.cardview.widget.CardView
                     android:layout_width="match_parent"
@@ -105,7 +106,7 @@
                     android:layout_marginStart="16dp"
                     android:layout_marginTop="8dp"
                     android:layout_marginEnd="16dp"
-                    android:background="#fff"
+                    app:cardBackgroundColor="@color/transparant"
                     android:paddingBottom="20dp"
                     app:cardCornerRadius="8dp">
 
@@ -115,6 +116,7 @@
                         android:layout_marginStart="16dp"
                         android:layout_marginTop="16dp"
                         android:layout_marginBottom="8dp"
+                        android:background="@drawable/circle"
                         android:src="@drawable/ic_baseline_email_24" />
 
                     <TextView
@@ -124,7 +126,7 @@
                         android:layout_marginTop="30dp"
                         android:fontFamily="@font/raleway_regular"
                         android:text="kurniaihsan58@gmail.com"
-                        android:textColor="#000"
+                        android:textColor="@color/putih12"
                         android:textSize="16dp" />
 
                     <ImageView
@@ -143,7 +145,7 @@
                         android:layout_marginTop="105dp"
                         android:fontFamily="@font/raleway_regular"
                         android:text="https://github.com/IhsanKurnia"
-                        android:textColor="#000"
+                        android:textColor="@color/putih12"
                         android:textSize="16dp" />
                 </androidx.cardview.widget.CardView>
             </LinearLayout>

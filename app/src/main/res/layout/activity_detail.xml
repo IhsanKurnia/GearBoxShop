@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/ungu12"
+    android:background="@drawable/bg_latar"
     android:orientation="vertical"
     tools:context=".DetailMobilActivity">
 
@@ -12,7 +12,7 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="59dp"
-        android:background="@color/ungu12"
+        android:background="@drawable/bg_latar"
         android:gravity="center_vertical"
         android:orientation="horizontal">
 
@@ -57,9 +57,9 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_margin="8dp"
-                android:layout_marginStart="16dp"
-                android:layout_marginEnd="16dp"
-                app:cardBackgroundColor="#6AFFFFFF"
+                android:layout_marginStart="2dp"
+                android:layout_marginEnd="2dp"
+                app:cardBackgroundColor="@color/transparant"
                 app:cardCornerRadius="8dp">
 
                 <RelativeLayout
@@ -84,7 +84,7 @@
                         android:fontFamily="@font/raleway_semibold"
                         android:padding="15dp"
                         android:text="Nama Mobil"
-                        android:textColor="#fff"
+                        android:textColor="@color/putih12"
                         android:textSize="20sp" />
 
                     <TextView
