@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/colorAccent"
+    android:background="@drawable/ac_bg"
     android:orientation="vertical"
     tools:context=".AboutActivity">
 
@@ -12,7 +12,7 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="60dp"
-        android:background="@color/colorAccent"
+        android:background="@drawable/ac_bg"
         android:gravity="center_vertical"
         android:orientation="horizontal">
 
@@ -37,6 +37,7 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
+            android:background="@drawable/ac_bg"
             android:orientation="vertical">
             <!--Content card-->
             <androidx.cardview.widget.CardView
@@ -50,15 +51,23 @@
                 app:cardBackgroundColor="#846AD3"
                 app:cardCornerRadius="8dp">
 
-                <ImageView
-                    android:id="@+id/img_about"
-                    android:layout_width="120dp"
-                    android:layout_height="120dp"
-                    android:layout_gravity="center"
-                    android:layout_margin="5dp"
-                    android:adjustViewBounds="true"
-                    android:background="@drawable/circle"
-                    android:src="@drawable/user_pic" />
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/ac_bg">
+
+
+                    <ImageView
+                        android:id="@+id/img_about"
+                        android:layout_width="120dp"
+                        android:layout_height="120dp"
+                        android:layout_gravity="center"
+                        android:layout_margin="5dp"
+                        android:adjustViewBounds="true"
+                        android:src="@drawable/user_pic" />
+
+                </FrameLayout>
+
 
                 <TextView
                     android:layout_width="wrap_content"
@@ -84,10 +93,11 @@
                     android:textSize="16sp" />
             </androidx.cardview.widget.CardView>
 
+
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="200dp"
-                android:orientation="horizontal">
+                android:orientation="vertical">
 
                 <androidx.cardview.widget.CardView
                     android:layout_width="match_parent"
@@ -96,14 +106,14 @@
                     android:layout_marginStart="16dp"
                     android:layout_marginTop="8dp"
                     android:layout_marginEnd="16dp"
+                    android:background="#fff"
                     android:paddingBottom="20dp"
-                    app:cardBackgroundColor="#846AD3"
                     app:cardCornerRadius="8dp">
 
                     <ImageView
-                        android:layout_width="50dp"
+                        android:layout_width="60dp"
                         android:layout_height="50dp"
-                        android:layout_marginStart="16dp"
+                        android:layout_marginStart="8dp"
                         android:layout_marginTop="16dp"
                         android:layout_marginBottom="8dp"
                         android:background="@drawable/circle"
@@ -112,46 +122,35 @@
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:layout_marginStart="90dp"
+                        android:layout_marginStart="70dp"
                         android:layout_marginTop="30dp"
                         android:fontFamily="@font/raleway_regular"
                         android:text="kurniaihsan58@gmail.com"
-                        android:textColor="#fff"
-                        android:textSize="14dp" />
+                        android:textColor="#000"
+                        android:textSize="16dp" />
 
                     <ImageView
                         android:id="@+id/github"
-                        android:layout_width="50dp"
-                        android:layout_height="50dp"
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"
                         android:layout_gravity="center_vertical"
-                        android:layout_marginStart="16dp"
+                        android:layout_marginStart="8dp"
                         android:layout_marginTop="20dp"
                         android:src="@drawable/git" />
 
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:layout_marginStart="90dp"
+                        android:layout_marginStart="70dp"
                         android:layout_marginTop="105dp"
                         android:fontFamily="@font/raleway_regular"
                         android:text="https://github.com/IhsanKurnia"
-                        android:textColor="#fff"
-                        android:textSize="14dp" />
+                        android:textColor="#000"
+                        android:textSize="16dp" />
                 </androidx.cardview.widget.CardView>
             </LinearLayout>
 
         </LinearLayout>
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="80dp"
-            android:layout_marginTop="550dp"
-            android:textAlignment="center"
-            android:fontFamily="@font/raleway_thin"
-            android:text="GearBoxShop 2020 Create By: Ihsan Kurnia"
-            android:textColor="#fff"
-            android:textSize="12dp" />
     </RelativeLayout>
 
 </LinearLayout>

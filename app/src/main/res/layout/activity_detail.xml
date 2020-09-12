@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/colorAccent"
+    android:background="@drawable/ac_bg"
     android:orientation="vertical"
     tools:context=".DetailMobilActivity">
 
@@ -12,7 +12,7 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="59dp"
-        android:background="@color/colorAccent"
+        android:background="@drawable/ac_bg"
         android:gravity="center_vertical"
         android:orientation="horizontal">
 
@@ -47,7 +47,7 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:layout_marginTop="@dimen/cardview_default_radius"
+            android:layout_marginTop="8dp"
             android:orientation="vertical"
             android:paddingBottom="20dp">
             <!--Content Image-->
@@ -57,31 +57,29 @@
                 android:layout_height="wrap_content"
                 android:adjustViewBounds="true"
                 android:layout_marginStart="8dp"
+                android:layout_marginBottom="8dp"
                 android:layout_marginEnd="8dp"
                 android:background="@drawable/card"
                 android:scaleType="fitXY"
                 android:src="@drawable/ls_01" />
-            <!--Content Image-->
 
             <TextView
                 android:id="@+id/tv_nama_mobil"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="7dp"
-                android:background="@color/colorAccent"
+                android:layout_height="59dp"
+                android:background="@drawable/ac_bg"
                 android:fontFamily="@font/raleway_medium"
                 android:padding="15dp"
                 android:text="Nama Mobil"
                 android:textColor="#fff"
                 android:textSize="20sp" />
-            <!--content Title-->
 
-            <!--Content Detail-->
             <TextView
                 android:id="@+id/tv_detail"
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
                 android:layout_marginStart="16dp"
+                android:layout_marginTop="8dp"
                 android:layout_marginEnd="16dp"
                 android:background="@drawable/detail"
                 android:fontFamily="@font/raleway_regular"
@@ -95,8 +93,6 @@
             <!--Content Detail-->
 
 
-
-
             <!--About me-->
             <TextView
                 android:layout_width="match_parent"
@@ -107,7 +103,7 @@
                 android:text="Quotes"
                 android:textColor="#fff"
                 android:textSize="20sp" />
-
+            <!--frame-->
             <androidx.cardview.widget.CardView
                 android:layout_width="match_parent"
                 android:layout_height="200dp"
