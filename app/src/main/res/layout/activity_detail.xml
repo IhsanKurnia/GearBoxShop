@@ -59,7 +59,6 @@
                 android:layout_margin="8dp"
                 android:layout_marginStart="16dp"
                 android:layout_marginEnd="16dp"
-                android:elevation="1dp"
                 app:cardBackgroundColor="#6AFFFFFF"
                 app:cardCornerRadius="8dp">
 
@@ -82,7 +81,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
                         android:layout_below="@+id/iv_gambar_mobil"
-                        android:fontFamily="@font/raleway_medium"
+                        android:fontFamily="@font/raleway_semibold"
                         android:padding="15dp"
                         android:text="Nama Mobil"
                         android:textColor="#fff"
@@ -111,9 +110,9 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_below="@+id/tv_detail"
-                        android:fontFamily="@font/raleway_medium"
-                        android:gravity="center"
                         android:layout_marginTop="8dp"
+                        android:fontFamily="@font/raleway_semibold"
+                        android:gravity="center"
                         android:padding="10dp"
                         android:text="Quotes"
                         android:textColor="#fff"
@@ -125,11 +124,11 @@
                         android:layout_height="200dp"
                         android:layout_below="@+id/qoutes"
                         android:layout_marginStart="16dp"
-                        android:layout_marginEnd="16dp"
                         android:layout_marginTop="8dp"
+                        android:layout_marginEnd="16dp"
                         android:layout_marginBottom="20dp"
-                        app:cardBackgroundColor="#fff"
                         android:padding="10dp"
+                        app:cardBackgroundColor="#fff"
                         app:cardCornerRadius="8dp">
 
                         <ImageView
