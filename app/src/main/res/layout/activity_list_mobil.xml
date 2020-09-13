@@ -33,7 +33,7 @@
             android:layout_marginEnd="16dp"
             android:background="@drawable/peopel"
             android:padding="5dp"
-            android:src="@drawable/ic_action_account_circle" />
+            android:src="@drawable/ic_person_01" />
     </LinearLayout>
     <!--ToolBar Navigasi-->
 
