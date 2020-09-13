@@ -21,7 +21,7 @@
             android:layout_weight="1"
             android:fontFamily="@font/raleway_medium"
             android:gravity="center"
-            android:padding="8dp"
+            android:padding="5dp"
             android:text="GearBox Shop"
             android:textColor="#fff"
             android:textSize="20sp" />
@@ -31,9 +31,9 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginEnd="16dp"
-            android:background="@drawable/list_person"
-            android:padding="10dp"
-            android:src="@drawable/ic_baseline_person_24" />
+            android:background="@drawable/peopel"
+            android:padding="5dp"
+            android:src="@drawable/ic_action_account_circle" />
     </LinearLayout>
     <!--ToolBar Navigasi-->
 
@@ -50,7 +50,7 @@
         android:hint="Search Mobil"
         android:background="@drawable/search"
         android:layout_marginBottom="8dp"
-        android:drawableStart="@drawable/ic_baseline_search_24"
+        android:drawableStart="@drawable/ic_search"
         android:textColor="#7CFFFFFF"
         android:textColorHint="#68FFFFFF"
         android:textSize="16dp" />
