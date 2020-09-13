@@ -5,7 +5,7 @@ import java.util.ArrayList;
 public class modelData {
     /*Data Nama Kendaraan*/
     private static String[] namesCars = {
-            "Aston Martin D11 DBS Superleggera",
+            "Aston Martin DB11 DBS Superleggera",
             "Mazda MX-5 Generasi 4 Skyactiv-G 2.0",
             "Jaguar F Type Coupe",
             "Volkswegen Polo Generasi 5 (Typ R) 1.2 TSI AT",

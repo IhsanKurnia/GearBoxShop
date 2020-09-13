@@ -23,6 +23,17 @@
             android:layout_marginStart="8dp"
             android:padding="8dp"
             android:src="@drawable/ic_baseline_arrow_back_24" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+            android:fontFamily="@font/raleway_medium"
+            android:gravity="center_vertical"
+            android:padding="5dp"
+            android:text="About Me"
+            android:textColor="#fff"
+            android:textSize="20sp" />
     </LinearLayout>
     <!--Navigasi-->
 
@@ -164,7 +175,7 @@
             android:textSize="12sp"
             android:gravity="center"
             android:paddingBottom="30dp"
-            android:text="Create By Ihsan Kurnia"
+            android:text="Created By Ihsan Kurnia"
             android:textColor="#fff" />
     </RelativeLayout>
 
